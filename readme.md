@@ -27,9 +27,14 @@ npm install
 
 3.**Run the Application:**
 
+4.**Configure Database With your credentials:**
+username:your_db_username
+password:your_db_password
+create database :bag_simulation_db
+
 node app.js
 
-
+4.**Test the Apis:**
 
 Authentication
 JWT (JSON Web Tokens) are used for authentication. Include the token in the Authorization header for authenticated routes.
@@ -54,21 +59,17 @@ POST /users
 Create a new user.
 Request Body: { "username": "newuser", "password": "newpassword" }
 
-
 POST /login
 
 login
 Request Body: { "username": "newuser", "password": "newpassword" }
-
-
-
 
 Test the API
 You can use tools like Postman or curl to test the API.
 
 Login to Get JWT Token:
 curl -X POST -H "Content-Type: application/json" -d '{"username": "yourusername", "password": "yourpassword"}' http://localhost:3000/login
- Retrieve the JWT token from the response.
+Retrieve the JWT token from the response.
 
 GET All Users:
 curl -X GET -H "Authorization: Bearer your_jwt_token" http://localhost:3000/users
