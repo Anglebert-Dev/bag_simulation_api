@@ -27,14 +27,15 @@ npm install
 
 3.**Run the Application:**
 
+node app.js
+
 4.**Configure Database With your credentials:**
+
 username:your_db_username
 password:your_db_password
 create database :bag_simulation_db
 
-node app.js
-
-4.**Test the Apis:**
+5.**Test the Apis:**
 
 Authentication
 JWT (JSON Web Tokens) are used for authentication. Include the token in the Authorization header for authenticated routes.
